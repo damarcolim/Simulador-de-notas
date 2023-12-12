@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Notas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="simulador">
+        <div class="row">
+            <div class="box col-sm-12 col-md-6 col-12">
+                <h2>Simulador de Notas</h2>
+                <p class="mb-4"><strong>Lorem</strong></p>
+                <form>
+                    <div class="form-group">
+                        <label for="nota1">A1 - Atividade Virtual (AVA)</label>
+                        <input type="number" class="form-control" id="nota1" placeholder="Insira nota da A1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nota2">A2 - Prática Presencial </label>
+                        <input type="number" class="form-control" id="nota2" placeholder="Insira nota da A2" required>
+                    </div>
+
+                    <button type="button" class="btn btn-success" onclick="calcularMedia()">Calcular Nota</button>
+                    <button type="button" class="btn btn-danger" onclick="limparCampos()">Limpar Campos</button>
+                </form>
+
+                <hr id="media-ponderada">
+
+                <h3 class="mt-4 nota-final">Nota Final:</h3>
+                <p id="mediaPonderada"></p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore aperiam rem nesciunt cumque
+                    consequatur architecto, incidunt commodi omnis, molestias ullam quos eum unde, natus itaque ea
+                    similique at voluptatum. Asperiores.
+                </p>
+                <p>
+
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, quod blanditiis debitis quasi
+                    iusto facere hic deserunt qui ipsum ad sunt explicabo delectus ullam mollitia autem impedit
+                    voluptates, placeat est.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quibusdam laudantium esse
+                    alias ea error libero recusandae totam quam, corrupti, dicta sequi voluptatem voluptate. Quis cum
+                    vitae placeat atque veniam.
+                </p>
+
+            </div>
+
+            <div class="box col-sm-12 col-md-6 col-12">
+
+                <h6><strong>Criterios de Aprovação</strong></h6>
+                <p>Para garantir a aprovação na disciplina, você deve atender rigorosamente a todos os critérios
+                    estabelecidos.
+                    A avaliação compreende duas etapas distintas, cada uma com seu respectivo peso na composição da nota
+                    final.
+                </p>
+
+                <!-- <hr id="media-ponderada"> -->
+
+                <p><strong>A1 - Atividade Virtual (AVA) - PESO 04:
+                    </strong></p>
+                <p>A primeira parte da avaliação ocorrerá por meio do Ambiente Virtual de Aprendizagem (AVA). Você
+                    deverá
+                    demonstrar seu desempenho através de atividades online, cujo resultado contribuirá com 40% da nota
+                    final.
+                </p>
+
+                <p><strong>A2 - Prática Presencial - PESO 06:
+                    </strong></p>
+                <p>A segunda parte da avaliação se dará por meio da prática presencial realizada nos sábados. Esta etapa
+                    corresponde a 60% da nota total. É imprescindível que você participe ativamente dessas atividades
+                    para
+                    obter um desempenho satisfatório.
+                </p>
+
+                <!--  <hr id="media-ponderada"> -->
+
+                <p>Portanto, a nota final será a soma ponderada das avaliações A1 e A2. Ressalta-se que a aprovação na
+                    disciplina requer o alcance de uma pontuação que atenda a todos os critérios estabelecidos.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!--  <img id="logo-senai" src="./img/logo.png" alt="" width="80"> -->
+
+    <script src="/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
